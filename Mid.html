@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romeo Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <script src="https://kit.fontawesome.com/ab375ae48a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  
+  <video autoplay muted loop playsinline id="bg-video" class="position-fixed w-100 h-100 object-fit-cover z-n1">
+    <source src="IMG/haduvi.mp4" type="video/mp4" />
+    <source src="IMG/brand.gif" type="image/gif" />
+  </video>
+
+
+  <header class="py-5" id="header" data-aos="flip-up">
+    <div class="container text-white">
+      <nav class="d-flex justify-content-between align-items-center">
+        <img src="IMG/brand.gif" alt="Logo" class="logo" data-aos="flip-left" data-aos-duration="2000" />
+        <ul class="nav" id="sidemenu" data-aos="fade-left">
+          <li class="nav-item"><a class="nav-link text-white" href="#header">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Contact">Contact</a></li>
+          <li><i class="fa-solid fa-circle-xmark ms-3" onclick="closemenu()"></i></li>
+        </ul>
+        <i class="fa-solid fa-bars-staggered d-lg-none" onclick="openmenu()"></i>
+      </nav>
+      <div class="mt-5">
+        <p class="type">App & Web Developer & Advance Networking</p>
+        <h1 class="Rpt">I'm <span>Romeo Paolo Tolentino</span><br>From<br>The Philippines</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="IMG/Background.png" alt="About Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p data-aos="fade-up">
+            I am a 2026 graduate of National University – Lipa, where I earned my Bachelor’s degree in Information Technology with a focus on Application and Web Development. Throughout my academic journey, I gained hands-on experience in designing and developing innovative software solutions, including web applications, mobile apps, and enterprise-level systems. My coursework and projects have equipped me with a strong foundation in programming languages, database management, and modern development frameworks, making me well-prepared to tackle real-world challenges in the IT industry.
+          
+          
+          </p>
+          
+          <div class="tab-title" data-aos="flip-left">                
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li data-aos="zoom-in-up"><span>Networking</span><br>Designing and Configuring Networks for Optimal Performance. Our expertise includes setting up secure, scalable, and high-speed networks, ensuring reliability and seamless communication for businesses of all sizes.</li>
+              <li data-aos="zoom-in-up"><span>Web Development</span><br>Creating Responsive and Dynamic Websites with User-Centered Design. We specialize in building modern, mobile-friendly websites that provide a great user experience and help businesses establish a strong online presence.</li>
+              <li data-aos="zoom-in-up"><span>App Development</span><br>Building iOS and Android Applications to Elevate User Engagement. We develop intuitive, feature-rich apps that are optimized for performance, delivering seamless experiences across all devices.</li>
+            </ul>
+            
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li data-aos="zoom-out-down"><span>Networking (2027)</span><br>Designed and configured a campus-wide network using Cisco Packet Tracer, ensuring optimal connectivity, security, and scalability for multiple departments and buildings, while integrating advanced features like VLANs, routing protocols, and network security measures.</li>
+              <li data-aos="zoom-out-down"><span>Web Development (2028)</span><br>Developed a responsive e-commerce site using HTML, CSS, JavaScript, and PHP, focusing on a seamless user experience, secure payment integration, and efficient product management for both users and administrators.</li>
+              <li data-aos="zoom-out-down"><span>App Development (2028)</span><br>Built a grocery management app using Java (Android) and Firebase, providing features for item tracking, grocery lists, and real-time sync between users' devices. Integrated Firebase for real-time database updates, user authentication, and cloud storage.</li>
+            </ul>
+            
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>BSIT – Networking Focus (2027)</span><br>Capstone: Enterprise Network Design, where I developed a comprehensive network architecture for a large-scale business, focusing on scalability, security, and efficient data flow across multiple departments and locations.</li>
+              <li><span>Web Development Project (2027)</span><br>Created a Student Portal for Grade Tracking, offering an intuitive user interface that allows students and instructors to track academic performance, assignments, and grades in real-time with enhanced security features.</li>
+              <li><span>Mobile App Project (2028)</span><br>Developed a Study Schedule Manager App, designed to help students organize their study sessions, set reminders, and track progress, optimizing their time management and boosting productivity.</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="Services">
+    <div class="container">
+      <h1 class="sub-title" data-aos="fade-down-left">Services</h1>
+      <div class="service-lists">
+        <div class="wow" data-aos="flip-up">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Creating dynamic and responsive websites using HTML, CSS, JavaScript, and PHP. I focus on delivering modern user experiences (UX) by integrating clean code, intuitive interfaces, and responsive layouts that work seamlessly across all devices. From e-commerce platforms to personal portfolios, my web development projects are designed to meet the needs of both users and businesses, ensuring functionality, speed, and accessibility.</p>
+          <a href="#">Learn More</a>
+        </div>
+        
+        <div data-aos="flip-up">
+          <i class="fa-brands fa-sketch"></i>
+          <h2>Mobile App Development</h2>
+          <p>Building intuitive and high-performance mobile apps using Java, Kotlin, and Flutter for both Android and iOS platforms. I focus on creating seamless user experiences, ensuring that the apps are not only visually appealing but also efficient and responsive. Whether developing native Android apps with Java and Kotlin or cross-platform apps with Flutter, I ensure that each app is optimized for performance, scalability, and ease of use, meeting the unique needs of users and businesses.</p>
+          <a href="#">Learn More</a>
+        </div>
+        
+        <div data-aos="flip-up">
+          <i class="fa-solid fa-network-wired"></i>
+          <h2>Networking</h2>
+          <p>Designing and configuring secure, scalable, and efficient networks using Cisco technologies. I specialize in setting up enterprise-level network infrastructures, including routers, switches, and firewalls, while ensuring optimal performance, reliability, and security. My expertise extends to implementing VLANs, routing protocols, and network security measures, providing businesses with the robust network solutions they need to stay connected and secure in an increasingly digital world.</p>
+          <a href="#">Learn More</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="Portfolio">
+    <div class="container">
+      <h1 class="sub-title" data-aos="flip-left">MY WORK</h1>
+      <div class="work-lists">
+        <div class="work" data-aos="fade-right">
+          <img src="IMG/port1.png" alt="Notiflow">
+          <div class="layer">
+            <h3>Notiflow</h3>
+            <p>Multifunctional app with task reminder and timer.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" data-aos="flip-left">
+          <img src="IMG/port2.jpg" alt="Physique">
+          <div class="layer">
+            <h3>Physique</h3>
+            <p>Documenting my fitness transformation journey.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" data-aos="fade-right">
+          <img src="IMG/port3.png" alt="Unitflow">
+          <div class="layer">
+            <h3>Unitflow</h3>
+            <p>Smart housing app for better home searching.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn" data-aos="flip-up">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="Contact">
+    <div class="container">
+      <div class="row" data-aos="fade-down">
+        <div class="contact-left">
+          <h1>Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> contact@haduken.com</p>
+          <p><i class="fa-solid fa-phone"></i> 09696969696</p>
+          <div class="social-icons">
+            <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="IMG/CV.pdf" download class="btn btn2" data-aos="zoom-in-right">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="submit_form.php" method="POST">
+            <input type="text" name="Name" placeholder="Name" required />
+            <input type="email" name="Email" placeholder="Email" required />
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2" data-aos="zoom-out-up">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright" data-aos="zoom-in-right">
+      <p>&copy; 2025 Romeo Paolo Tolentino. All rights reserved <i class="fa-solid fa-skull"></i>.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+      for (let tablink of tablinks) tablink.classList.remove("active-link");
+      for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
